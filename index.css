@@ -1,0 +1,41 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Urbanist", sans-serif;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+
+  /* BreakPoint */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 991px;
+  --breakpoint-lg: 1080px;
+
+
+  /* Color */
+  --color-primary: #be4248;
+  --color-secondary: #f37402;
+  --color-green: #376e50;
+  --color-black: #4c4c4c;
+  --color-black-gray: #404040;
+  --color-deep-black: #1d1d1d;
+  --color-gray-30: #ececec;
+  --color-gray-40: #f4f4f4;
+}
