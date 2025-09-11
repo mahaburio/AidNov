@@ -1,3 +1,4 @@
+import AboutSection from "../components/common/AboutSection";
 import CollectionCards from "../components/common/ColllectionCards";
 import FAQSection from "../components/common/FAQs";
 import Footer from "../components/footer/Footer";
@@ -8,6 +9,8 @@ const Homepage = () => {
     <div>
       {/* Header */}
       <Header />
+
+      <AboutSection />
 
       {/* Collection Section */}
 
@@ -49,18 +52,18 @@ const Homepage = () => {
           </div>
           <div className="lg:w-[45%] lg:mt-0 mt-20">
             <h2 className="text-3xl font-bold">
-              La collecte de fonds sur AidNov<sup className="text-xs">TM</sup>{" "}
+              La collecte de fonds sur AidNov<sup className="text-sm relative -top-4 font-extrabold">TM</sup>{" "}
               est conviviale, efficace et sécurisée.
             </h2>
             <div className="flex mt-5">
               <div className="h-1 w-16 bg-secondary"></div>
             </div>
             <p className="mt-5 text-lg font-semibold leading-[1.4]">
-              AidNov<sup>TM</sup> vous offre tous les outils pour réussir votre
+              AidNov<sup className="text-sm relative -top-4 font-extrabold">TM</sup> vous offre tous les outils pour réussir votre
               cagnotte et réunir les fonds nécessaires pour vous-même, vos amis,
               votre famille ou votre association. Avec ses cagnottes sans frais
               de lancement pour les organisateurs, AidNov
-              <sup>TM</sup> s’impose comme la référence en matière de :
+              <sup className="text-sm relative -top-4 font-extrabold">TM</sup> s’impose comme la référence en matière de :
             </p>
 
             <div className=" grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5">
