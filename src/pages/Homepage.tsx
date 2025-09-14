@@ -145,14 +145,16 @@ const Homepage = () => {
         </div>
       </section>
 
+      
+      {/* Campaign */}
+
+      <CampaignSlide />
+
 
 
       {/* About Section */}
       <AboutSection />
 
-      {/* Campaign */}
-
-      <CampaignSlide />
 
       {/* Collection Section */}
 

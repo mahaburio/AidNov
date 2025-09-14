@@ -28,7 +28,7 @@ const collectionData: CollectionCard[] = [
 
 const CollectionCards: React.FC = () => {
   return (
-    <section className="px-4 sm:px-6 py-14 md:py-30 lg:px-20">
+    <section className="px-4 sm:px-6 py-14 md:pb-30 lg:px-20">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-snug">
         Lancez une collecte <br /> pour vous-même ou vos proches
       </h1>
