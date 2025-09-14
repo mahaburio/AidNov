@@ -1,4 +1,5 @@
 import AboutSection from "../components/common/AboutSection";
+import CampaignSlide from "../components/common/CampaignSlide";
 import Card from "../components/common/Card";
 import CollectionCards from "../components/common/ColllectionCards";
 import Dropdown from "../components/common/Dropdown";
@@ -144,8 +145,14 @@ const Homepage = () => {
         </div>
       </section>
 
+
+
       {/* About Section */}
       <AboutSection />
+
+      {/* Campaign */}
+
+      <CampaignSlide />
 
       {/* Collection Section */}
 

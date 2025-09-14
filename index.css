@@ -18,6 +18,8 @@ html {
 
 @import "tailwindcss";
 
+
+
 @theme {
   /* Font */
   --font-primary: "Urbanist", sans-serif;
@@ -183,4 +185,5 @@ html {
 
 
 /* Hero Section */
+
 
