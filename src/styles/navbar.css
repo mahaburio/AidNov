@@ -1,0 +1,218 @@
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  left: -100%;
+  top: 50px;
+  z-index: 999;
+  display: flex;
+  transition: 0.4s ease;
+  opacity: 0;
+  padding-left: 75px;
+}
+
+.menu.active {
+  left: 0;
+  opacity: 1;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.menu .aside {
+  width: 15%;
+  padding-top: 40px;
+}
+
+.menu .close-menu i {
+  transition: 0.3s ease;
+}
+
+.menu .close-menu:hover i {
+  transform: rotate(180deg);
+  display: block;
+  transition: 0.3s ease;
+}
+
+.menu .close-menu:hover {
+  color: var(--color-secondary);
+  transition: 0.3s ease;
+}
+
+.nav-menu-sec .faq li a {
+  font-size: 18px;
+  color: var(--color-white);
+  padding: 5px 5px;
+  margin-top: 0px;
+  display: block;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-menu-sec .faq li a:hover {
+  opacity: 0.4;
+  transition: 0.3s ease;
+}
+
+.nav-menu-sec .right ul {
+  list-style: none;
+}
+
+.nav-menu-sec .policies li a {
+  opacity: 0.4;
+  padding: 4px;
+}
+
+.menu .copyright .bg-line {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 235, 247, 0.05) 21.5%,
+    #ebecf7 50.38%,
+    rgba(235, 236, 247, 0.05) 80%
+  );
+}
+
+.menu .copyright .left,
+.menu .copyright .right {
+  opacity: 0.4;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.nav-links li a {
+  font-size: 35px;
+  color: var(--color-white);
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+
+  transition: 0.2s ease;
+}
+
+.nav-links li a span {
+  width: 0px;
+  background-color: #f2b809;
+  height: 3px;
+  transition: 0.2s ease;
+  margin-right: 10px;
+}
+
+.nav-links li a:hover span {
+  width: 60px;
+  transition: 0.2s ease;
+}
+.nav-links li a:hover {
+  color: #f2b809;
+  transition: 0.2s ease;
+  opacity: 1 !important;
+}
+
+.nav-links li a.activeNav {
+  opacity: 40%;
+}
+
+.nav-links li a:hover {
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.nav-links .sub-list {
+  display: none;
+}
+
+.nav-links li:hover .sub-list {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .menu {
+    padding-left: 0;
+  }
+  .menu .aside {
+    display: none;
+  }
+
+
+  .navbar .navbar-brand {
+    width: auto;
+    display: none;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .navbar .navbar-btn .btn {
+    padding: 8px 20px;
+  }
+
+  .navbar .navbar-menu {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* menu Nav */
+
+  .menu .nav-menu {
+    padding: 40px 20px;
+  }
+
+  .nav-links li a {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .section-desc {
+    font-size: 17px !important;
+  }
+
+  .nav-menu-sec {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .nav-menu-sec .right {
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+
+  .menu .search-icon {
+    right: 40px;
+    top: 40px;
+  }
+
+  .nav-menu-sec .faq li a {
+    font-size: 14px;
+  }
+
+  .nav-menu-sec .policies li a {
+    font-size: 13px;
+  }
+
+  .nav-links li a:hover span{
+    width: 40px;
+  }
+}

@@ -77,7 +77,7 @@ const AboutSection = () => {
       ref={sectionRef}
       className="about-section bg-black px-6 md:px-16 py-14 pt-42 sm:pt-30 mt-60 relative"
     >
-      <div className="absolute -top-[150px] lg:-top-[140px] xl:-top-[200px] left-[7.3%]  max-w-[85%] bg-white rounded-md shadow p-8 sm:p-10 xl:p-16">
+      <div className="absolute -top-[150px] lg:-top-[140px] xl:-top-[200px] left-[7.3%]  max-w-[85%] bg-white rounded-md shadow border border-gray-200 p-8 sm:p-10 xl:p-16">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black mb-4 text-center">
           Avec AidNov
           <sup className="text-sm relative -top-4 font-extrabold">TM</sup>, vous
